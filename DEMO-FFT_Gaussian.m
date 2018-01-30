@@ -1,5 +1,9 @@
 % Convert a Gaussian pulse from the time domain to the frequency domain.
 
+%%%%%%%%%%%%%%%%%
+% Generate data % 
+%%%%%%%%%%%%%%%%%
+
 Fs  = 100;              % Sampling frequency
 t   = -0.5:1/Fs:0.5;    % Time vector 
 L   = length(t);        % Signal length
@@ -12,6 +16,10 @@ if 1                    % Plot the pulse in the time domain
     xlabel('Time (t)')
     ylabel('X(t)')
 end
+
+%%%%%%
+% FT % 
+%%%%%%
 
 % To use the fft function to convert the signal to the frequency domain, 
 % first identify a new input length that is the next power of 2 from the 
