@@ -6,7 +6,7 @@
 Fs  = 100;              % Sampling frequency
 t   = -0.5:1/Fs:0.5;    % Time vector 
 L   = length(t);        % Signal length
-X   = 1/(4*sqrt(2*pi*0.01))*(exp(-t.^2/(2*0.01)));
+X   = 1/(4*sqrt(2*pi*0.01))*(exp(-t.^2/(2*0.01)))+0.001;
 
 if 1                    % Plot the pulse in the time domain
     f1 = figure;
